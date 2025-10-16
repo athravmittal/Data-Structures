@@ -2,7 +2,7 @@
 using namespace std;
 
 void printUpperTriangular(int arr[], int n) {
-    cout << "\nUpper Triangular Matrix:\n";
+    cout << "Upper Triangular Matrix:"<<endl;
     int k = 0;
 
     for (int i = 0; i < n; i++) {

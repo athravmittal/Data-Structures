@@ -10,8 +10,10 @@ void concatenate(string str1, string str2)
 
 int main()
 {
-    string str1 = "hello";
-    string str2 = "guyzz!";
+    string str1 ;
+    string str2 ;
+
+    cin>>str1>>str2;
 
     concatenate(str1, str2);
 }

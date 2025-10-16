@@ -4,14 +4,14 @@ using namespace std;
 int main()
 {
     int n;
-    printf("Enter size of array: ");
-    scanf("%d", &n);
+    cout << "Enter size of array: ";
+    cin >> n;
     int arr[n];
 
-    printf("Enter %d elements: ", n);
+    cout << "Enter elements: ";
     for (int i = 0; i < n; i++)
     {
-        scanf("%d", &arr[i]);
+        cin >> arr[i];
     }
 
     bool flag;
@@ -24,20 +24,20 @@ int main()
         {
             if (arr[j] > arr[j + 1])
             {
-                int temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-                flag = true;
+                flag=true;
+                int temp = arr[j + 1];
+                arr[j + 1] = arr[j];
+                arr[j] = temp;
             }
         }
-
         if (!flag)
         {
             break;
         }
+        
     }
 
-    cout<<"Sorted Array:";
+    cout << "Sorted Array:";
     for (int i = 0; i < n; i++)
     {
         printf("%d ", arr[i]);

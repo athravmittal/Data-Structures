@@ -1,13 +1,17 @@
 #include <iostream>
 using namespace std;
 
-void printLowerTriangular(int arr[], int n) {
-    cout << "\nLower Triangular Matrix:\n";
+void printLowerTriangular(int arr[], int n)
+{
+    cout << "Lower Triangular Matrix: "<<endl;
     int k = 0;
 
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-            if (j <= i)   {
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            if (j <= i)
+            {
                 cout << arr[k] << " ";
                 k++;
             }
@@ -18,16 +22,18 @@ void printLowerTriangular(int arr[], int n) {
     }
 }
 
-int main() {
+int main()
+{
     int n;
     cout << "Enter size of square matrix: ";
     cin >> n;
 
-    int total = n * (n + 1) / 2;   
+    int total = n * (n + 1) / 2;
     int lowerElements[total];
 
     cout << "Enter " << total << " elements : ";
-    for (int i = 0; i < total; i++) {
+    for (int i = 0; i < total; i++)
+    {
         cin >> lowerElements[i];
     }
 
